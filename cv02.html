@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+Para hacer esta página, tomé como ejemplo un CV que adjunto en el repositorio
+que a su vez extraje de:  https://www.cvmaker.com.ar/ , profesional (2 a 4 empleos)
+Esta es una segunda versión en la cual empecé a utilizar scripts de JSON para mostrar cómo se podría automatizar
+esta página para distintos CV, si bien la mayoria de los datos quedaron estáticos en sus respectivos tags
+La imagen la extraje de randomuser y utilicé un font de Google llamado Roboto (como en el ejemplo del videot )
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://randomuser.me/api/portraits/women/63.jpg">
+    <link rel="stylesheet" href="css/estilo01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <title>Curriculum Vitae - trabajo práctico</title>
+</head>
+
+<header>
+    <div class="fila">
+        <div class="elemento">
+            <h1 id="nombre"></h1>
+            <h2 id="titulo"></h2>
+        </div>
+        <div class="elemento">
+            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Imagen de perfil profesional" alt="2x2">
+        </div>
+        <div class="elemento">
+            <h4 id="domicilio"></h4>
+            <h4 id="ciudad"></h4>
+            <h6 id="telefono"></h6>
+            <a href="mailto:test_cv@ticmas.com"> test_cv@ticmas.com </a>
+        </div>
+    </div>
+
+</header>
+<body>
+    <div class="fila">
+        <div class="elemento">
+            <h3 id="quien"></h3>
+            <p id="brief"></p>
+        </div>
+        <div class="elemento-doble">
+            <h3>Experiencia Laboral</h3>
+            <h4 id="exp1"></h4>
+            <h5>mar 2018 - Presente</h5>
+            <h6>Barcelona</h6>
+            <p>Como gerente de sucursal de la concurrida Cofee Company, soy responsable del buen funcionamiento de la operación diaria. Dirijo a mi equipo y entreno a los nuevos empleados para que todos los clientes salgan de la tienda con una sonrisa y regresen regularmente. Mis principales responsabilidades incluyen:</p>
+            <p>    - Satisfacción del cliente: veo la satisfacción del cliente como mi responsabilidad más importante. Para lograr esto, aseguro una ocupación óptima con un equipo de baristas con fuertes habilidades sociales, que están dispuestos a hacer un esfuerzo adicional por el cliente.</p>
+            <p>    - Funcionamiento óptimo: al igual que en otros establecimientos de restauración, hay momentos de presión. Una buena planificación y organización son importantes para garantizar que todo funcione sin problemas. La ocupación correcta, las existencias correctas y personal bien capacitado.</p>
+            <h4 id="exp2"></h4>
+            <h5>jun 2016 - mar 2018</h5>
+            <h6>Barcelona</h6>
+            <p>Como barista en Coffee Company, mi principal responsabilidad fue preparar un excelente café. Además me encargué de: </p>
+            <p>    - Hospitalidad: recibimos a los clientes cuidadosamente a su llegada y nos aseguramos de que el pedido se tome y prepare correctamente. Además, juntos mantenemos el café limpio y hacemos los preparativos para la hora concurrida del café durante los períodos más tranquilos.</p>
+            <p>    - Capacitación de nuevos empleados: gracias a mis buenas habilidades sociales y conversación fluida, ayudé con la capacitación de nuevos empleados. Les enseñe todas las habilidades necesarias para desempeñarse bien con el equipo.</p>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="elemento">
+            <table>
+                <tr>
+                    <td>Atención al Cliente  </td>
+                    <td><strong>  Experto</strong></td>
+                </tr>                    
+                <tr>
+                    <td>Organización  </td>
+                    <td><strong>  Avanzado</strong></td>
+                </tr>
+                <tr>
+                    <td>Manejo de estrés  </td>
+                    <td><strong>  Experto</strong></td>
+                    </tr>
+                    <tr>
+                    <td>Liderazgo  </td>
+                    <td><strong>  Competente</strong></td>
+                    </tr>
+                    <tr>
+                    <td>Habilidades financieras  </td>
+                    <td><strong>  Competente</strong></td>
+                    </tr>
+                    <tr>
+                    <td>Marketing  </td>
+                    <td><strong>  Experto</strong></td>
+                    </tr>
+            </table>
+        </div>
+        <div class="elemento-doble">
+            <h3>Educación</h3>
+            <h4>Master en cultura e historia - Erasmus Universidad de Barcelona</h4>
+            <h5>ago 2012 - jun 2017</h5>
+            <h6>Barcelona</h6>
+            <p>En la universidad estudié la historia cultural de España, el resto del mundo y la interación entre ellos. El foco está en la cultura desde 1500 pero con énfasis en los últimos dos siglos.</p>
+
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="fila">
+        <div class="elemento">
+            <h4>Ana López</h4>
+        </div>
+        <div class="elemento">
+            <h4>+034 666 6666666</h4>
+        </div>
+        <div class="elemento">
+            <a href="mailto:test_cv@ticmas.com"> test_cv@ticmas.com </a>
+        </div>
+    </div>    
+</footer>
+<script>
+    const persona = '{"nombre":"Ana López","titulo":"Contadora","domicilio":"Calle Primavera 83","ciudad":"Barcelona, 03698","telefono":"+034 666 6666666","quien":"Acerca de Ana" }';
+    const resumen = '{"brief":"Soy una gerente de sucursal ambiciosa y con mentalidad social que otorga gran importancia a la amistad con el cliente. En los últimos años, he pasado de barista a gerente de sucursal. Gracias a mis excelentes habilidades de organización, mi sucursal bien atendida funciona sin problemas. Después de cuatro años, ahora estoy buscando un trabajo nuevo y desafiante donde pueda desarrollar aún más mis cualidades de liderazgo"}';
+    const experiencias = '{"exp1":"Gerente de Sucursal - Cofee Company", "exp2":"Barista - Cofee Company"}'; 
+    const personaObj = JSON.parse(persona);
+    const resumenObj = JSON.parse(resumen);
+    const experienciasObj = JSON.parse(experiencias);
+
+    document.getElementById('nombre').textContent = personaObj.nombre;
+    document.getElementById('titulo').textContent = personaObj.titulo;
+    document.getElementById('domicilio').textContent = personaObj.domicilio;
+    document.getElementById('ciudad').textContent = personaObj.ciudad;
+    document.getElementById('telefono').textContent = personaObj.telefono;
+    document.getElementById('quien').textContent = personaObj.quien;
+    document.getElementById('brief').textContent = resumenObj.brief;
+    document.getElementById('exp1').textContent = experienciasObj.exp1;
+    document.getElementById('exp2').textContent = experienciasObj.exp2;
+
+</script>
+</html>

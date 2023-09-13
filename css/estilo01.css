@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    top: 0;
+    position: sticky;
+    padding: 0%;
+    background-color: beige;
+}
+
+/* Estilos para las filas */
+.fila {
+    display: flex;
+}
+
+/* Estilos para los elementos */
+.elemento {
+    flex: 33%;
+    background-color: lightcyan;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Estilos para el elemento 5 y 6 consolidados */
+.elemento-doble {
+    flex: 66%;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 70%;
+}
+
+h3{
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+h4{
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+h5{
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+h6{
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
