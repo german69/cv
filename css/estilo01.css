@@ -58,3 +58,11 @@ h6{
     margin-block-start: 5px;
     margin-block-end: 5px;
 }
+
+button{
+    margin-top: 20px;
+}
+
+footer{
+    margin-bottom: 10px;
+}
