@@ -8,8 +8,10 @@
 header{
     top: 0;
     position: sticky;
+    margin: 15px;
     padding: 0%;
-    background-color: beige;
+    background-color: white;
+    border-bottom: solid;
 }
 
 /* Estilos para las filas */
@@ -20,17 +22,17 @@ header{
 /* Estilos para los elementos */
 .elemento {
     flex: 33%;
-    background-color: lightcyan;
+    background-color: white;
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
 }
 
 /* Estilos para el elemento 5 y 6 consolidados */
 .elemento-doble {
     flex: 66%;
-    background-color: lightblue;
+    background-color: white;
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
 }
 
 img {
@@ -64,5 +66,10 @@ button{
 }
 
 footer{
+    border-top: solid;
     margin-bottom: 10px;
+}
+
+td{
+   padding-left: 20px;
 }
